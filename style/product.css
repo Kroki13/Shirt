@@ -1,5 +1,5 @@
 .goods__header-wrap {
-    background: url('/image/web-ready/bg/hero.jpg') center center / cover no-repeat;
+    background: url('../image/web-ready/bg/hero.jpg') center center / cover no-repeat;
     height: 180px;
     position: relative;
     margin-bottom: 90px;
@@ -23,7 +23,7 @@
 }
 
 .banner-img {
-    background: url(/image/web-ready/decor/header-guys.png) center center / contain no-repeat;
+    background: url('../image/web-ready/decor/header-guys.png') center center / contain no-repeat;
     position: absolute;
     width: 160%;
     height: 155%;
@@ -314,13 +314,6 @@
     font-size: 13px;
     padding: 60px 105px 0 47px;
 }
-
-
-/* Не видно */
-
-.info__item-brend,
-.info__item-size,
-.info__item-condi {}
 
 
 /* Описание блокa desc*/
