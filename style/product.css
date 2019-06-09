@@ -1,0 +1,402 @@
+.goods__header-wrap {
+    background: url('/image/web-ready/bg/hero.jpg') center center / cover no-repeat;
+    height: 180px;
+    position: relative;
+    margin-bottom: 90px;
+}
+
+.goods__header-position {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+}
+
+.banner {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-img {
+    background: url(/image/web-ready/decor/header-guys.png) center center / contain no-repeat;
+    position: absolute;
+    width: 160%;
+    height: 155%;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.banner-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-152%, -50%);
+    line-height: 1;
+}
+
+.banner-text .lined-text {
+    font-size: 31px;
+}
+
+
+/* goods-frame */
+
+.goods-frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 105px;
+}
+
+.goods-frame__wrap {
+    display: flex;
+    width: 1100px;
+    height: 720px;
+    background: var(--yellow);
+}
+
+.goods-frame__col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+}
+
+.goods-frame__col--left {
+    align-items: center;
+    justify-content: center;
+}
+
+.goods-frame__col-wrap {
+    width: 530px;
+    height: 700px;
+    background: #fff;
+}
+
+.goods-frame__desc {
+    font-family: var(--Yanone);
+    border-bottom: 2px solid #f6efe0;
+    padding-left: 25px;
+}
+
+.goods-frame__image {
+    width: 472px;
+    height: 415px;
+}
+
+.goods-frame__sub-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding-top: 25px;
+    color: var(--yellow);
+    font-size: 17px;
+}
+
+.goods-frame__title {
+    margin: 0;
+    font-size: 47px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2.35px;
+    margin-bottom: 15px;
+}
+
+.goods-frame__price {
+    display: inline-block;
+    font-size: 37.5px;
+    background: var(--yellow);
+    padding: 0 11px 4px;
+    margin-bottom: 29px;
+}
+
+
+/* Список из чего сделана футболка */
+
+.on-goods__list {
+    padding: 30px 0 34px 25px;
+    border-bottom: 2px solid #f6efe0;
+}
+
+.on-goods__item {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    margin-bottom: 20px;
+    color: #1b1b1b;
+}
+
+.on-goods__item:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Размеры */
+
+.goods-frame__sizes {
+    padding: 27px 0 0 25px;
+}
+
+.size__label {
+    margin-right: 5px;
+}
+
+.goods-frame__sizes {
+    margin-bottom: 27px;
+}
+
+.size {
+    display: inline-flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--black);
+    border: 1px solid #e0d9c8;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+.size__in-stock:hover {
+    border: none;
+    background-color: var(--yellow);
+}
+
+.size__missing {
+    color: #cac3b3;
+    cursor: initial;
+}
+
+.size__input {
+    display: none;
+}
+
+.size__input:checked+.size__in-stock {
+    background: var(--yellow);
+    border: none;
+}
+
+
+/* цвет */
+
+.goods-frame__colors {
+    display: flex;
+    padding-left: 25px;
+    margin-bottom: 30px;
+}
+
+.color__label {
+    margin-right: 20px;
+}
+
+.color {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+.color__input {
+    display: none;
+}
+
+.color__input:checked+.color::before {
+    content: '';
+    position: absolute;
+    border: 3px solid #ffc92f;
+    top: -7px;
+    left: -7px;
+    right: -7px;
+    bottom: -7px;
+    border-radius: 50%;
+}
+
+.color--black {
+    background: #2f2c25;
+}
+
+.color--white {
+    background: #fff;
+    border: 2px solid #e0d9c8
+}
+
+.color--green {
+    background: #529029;
+}
+
+.color--blue {
+    background: #39498d;
+}
+
+.color--red {
+    background: #d82727;
+}
+
+
+/* Кнопка */
+
+.goods-frame__btn {
+    padding-left: 25px;
+}
+
+.goods-frame__button {
+    font-family: var(--Yanone);
+    border: transparent;
+    background: #1b1b1b;
+    padding: 10px 70px;
+    color: var(--yellow);
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    cursor: pointer;
+    transition: background 300ms;
+}
+
+.goods-frame__button:hover {
+    background: var(--red);
+}
+
+
+/* Секция информация о продукте */
+
+.info-products--center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-products {
+    margin-bottom: 80px;
+}
+
+.info {
+    width: 1100px;
+    position: relative;
+}
+
+.info__item {
+    display: flex;
+    width: 100%;
+    border: 10px solid var(--yellow);
+    position: absolute;
+}
+
+.info-content__left {
+    border-right: 1px solid #e0d9c8;
+    font-size: 13px;
+    color: #1b1b1b;
+    line-height: 1;
+    font-family: 'Roboto', sans-serif;
+}
+
+.info-content__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 32%;
+}
+
+.info-content__right {
+    width: 78%;
+}
+
+.info-content__right-text {
+    font-family: 'Roboto', sans-serif;
+    line-height: 20.5px;
+    font-size: 13px;
+    padding: 60px 105px 0 47px;
+}
+
+
+/* Не видно */
+
+.info__item-brend,
+.info__item-size,
+.info__item-condi {}
+
+
+/* Описание блокa desc*/
+
+.desc__list {
+    padding: 50px 40px;
+}
+
+.desc__item {
+    display: flex;
+    align-items: center;
+}
+
+.desc__icon-wrap {
+    margin-right: 25px;
+}
+
+.desc__icon {
+    width: 25px;
+    height: 25px;
+}
+
+
+/* Описание блокa size*/
+
+.size__image-wrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+    padding-top: 20px;
+}
+
+.size__image {
+    width: 227px;
+    height: 203px;
+}
+
+.size__text {
+    margin-bottom: 45px;
+}
+
+.size__text-item {
+    margin-bottom: 5px;
+}
+
+
+/* Секция о доставке */
+
+.condi__image-wrap {
+    width: 100%;
+    height: 100%;
+    padding: 50px 0 50px 65px;
+}
+
+.condi__text {
+    font-size: 13px;
+    padding: 50px 104px 0 47px;
+}
+
+
+/* О бренде */
+
+.brend__image-wrap {
+    padding: 56px 0 127px 60px;
+    width: 100%;
+    height: 100%;
+}
+
+.brend__image {
+    width: 224px;
+    height: 56px;
+}
+
+.brend__text {
+    font-size: 13px;
+    padding: 50px 104px 0 47px;
+}
